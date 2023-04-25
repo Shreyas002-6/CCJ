@@ -1,0 +1,28 @@
+body{
+background-color: #CCCCFF;
+
+      }
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+.card {
+  margin-top: 30px;
+  color: black;
+    width: 350px;
+    border-radius: 10px;
+   background-color: #F0FFFF;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.line{
+  color: black;
+}
+
+.profile_button{
+  backgorund-color: white;
+  padding:10px; 
+   border:none;
+   outline:0 !important;
+border-radius: 50px;
+  
+}
+ 

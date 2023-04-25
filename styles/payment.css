@@ -1,0 +1,51 @@
+
+    #pur{
+      width: 30%;
+      margin-left: 35%;
+      margin-top: 20px;
+    }
+    .form-group{
+      margin-top: 10px;
+    }
+
+    #purc{
+      margin-top: 25px;
+      width: 90px;
+background-color: #9FE2BF;
+border: solid white 1px;
+color: black
+    }
+    .linkb{
+        background-color: #F8C8DC;
+        color: black;
+        margin-top: 10px;
+        border-radius: 5px;
+        padding: 5px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+border: solid white 1px;
+     }   
+     h4{
+     margin-top: 20px;
+     font-size: 30px;
+     } 
+     #text{
+     color: white;
+}
+#downbad{
+
+width: 30%;
+margin-left: 35%;
+height: 200px;
+font-size: 22px;
+text-align: center;
+color: white;
+padding-top: 10px;
+
+}
+body{
+background-color: #CCCCFF;
+}
+ 
