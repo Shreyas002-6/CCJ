@@ -41,6 +41,9 @@
           <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
         </div>-->
     </form>
+<div class="footer">
+  <p>© 2023 <img src="./img/ccjwhitetr.png" alt="" width="15" height="15" class="d-inline-block align-text-top"> All RIGHTS RESERVED</p>
+</div>
 </body>
 
 </html>

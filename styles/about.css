@@ -1,0 +1,24 @@
+body{
+background-image: url("../img/backabout.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+#header{
+      font-size: 30px; 
+      margin-top: 20px;
+      color: whitesmoke;
+}
+.para{
+width: 70%;
+color: white;
+margin-left: 15%;
+text-align: center;
+font-size: 20px;
+}
+a{
+text-decoration:none;
+color: whitesmoke;
+}
+#instr{
+}

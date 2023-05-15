@@ -1,6 +1,9 @@
     body{
-  
-    color: ;
+  background-image: url(../img/homeback.png);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+   
 
     }
       table{
@@ -66,6 +69,7 @@
       #cfs{
       font-size: 30px; 
       margin-top: 20px;
+      color: whitesmoke;
       }
       .td3{
       border-radius: 20px;

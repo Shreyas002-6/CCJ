@@ -3,7 +3,7 @@
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
       import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, setPersistence, browserSessionPersistence, onAuthStateChanged, updateProfile} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
-      import { getDatabase, ref, set, get, child, onValue } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+      import { getDatabase, ref, set, get, child, onValue, remove } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -144,7 +144,6 @@ AddallData(data);
 AddallDataonce();
 
 
-
                 } else {
                     alert("No Coupons found");
                 }
@@ -152,11 +151,75 @@ AddallDataonce();
             .catch((error)=>{
                 alert(error)
 })
+
+var todayDate = new Date().toISOString().slice(0, 10);
+console.log(todayDate);
+
+var token = localStorage.getItem("token");
+
+            get(child(dbref, "Coupon/"))
+            .then((snapshot)=>{
+                if(snapshot.exists()){
+              //console.log(snapshot.val());
+
+              for (var key in snapshot.val()) {
+                
+                get(child(dbref, "Coupon/"+key))
+            .then((snapshot)=>{
+                if(snapshot.exists()){
+              //console.log(snapshot.val().date);
+var date1 = snapshot.val().date
+if(todayDate>date1){
+//console.log("Expired:"+ snapshot.val().date)
+
+get(child(dbref,"Coupon/")).then((snapshot)=>{
+  if(snapshot.exists()){
+    const tasksRef = ref(db, "Coupon/"+token);
+console.log(snapshot.val().token);
+console.log(date1)
+remove(tasksRef).then(() => {
+  console.log("Expired Coupon removed");
+});
+  }
+})
+
+
+}
+else{
+  //console.log("Valid:"+ snapshot.val().date)
+  console.log("All good");
+}
+            
+                } else {
+                    alert("No data found");
+                }
+            })
+            .catch((error)=>{
+                alert(error)
+            })
+
+
+                
+            }
+
+
+
+
+                } else {
+                    alert("No data found");
+                }
+            })
+            .catch((error)=>{
+                alert(error)
+            })
+
+
     // ...
   } else {
     // User is signed out
     // ...
   }
 });
+
 
 

@@ -55,6 +55,7 @@ var token = function() {
 
 
 
+
 document.getElementById("sell").addEventListener("click", function() {
   const db = getDatabase();
 //set(ref(db, "Coupon/"+uid+"/"),{
@@ -72,7 +73,9 @@ document.getElementById("sell").addEventListener("click", function() {
             .then(()=>{
                 alert("Coupon added successfully");
                 document.getElementById("sellout").reset();
-      
+
+                localStorage.setItem("token", token1);
+                console.log(localStorage.getItem("token"));
 
             })
             .catch((error)=>{
