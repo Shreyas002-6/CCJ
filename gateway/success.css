@@ -5,3 +5,61 @@ font-size: 30px;
 font-size: 30px;
 color: white;
 }
+body
+{
+  background-image: url("suback.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+color: white;
+}
+#box{
+margin-top: 120px;
+}
+
+
+
+#codel{
+
+font-family: 'Courier', monospace;
+font-smooth: never;
+-webkit-font-smoothing : none;
+font-weight: bold;
+color: black;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(CyberwayRiders-lg97d.ttf);
+}
+  
+#head{
+    font-family: myFirstFont;
+    color: yellow;
+/*text-shadow: 0 0 3px #FFFF00, 0 0 5px #FFFF00;*/
+font-weight: 5;
+font-size: 50px;
+}
+
+@font-face {
+    font-family: myFirstFont2;
+    src: url(Minecraft.ttf);
+}
+  
+#mhead{
+    font-family: myFirstFont2;
+    color: #AAFF00;
+font-size: 30px;
+}
+
+@font-face {
+    font-family: myFirstFont1;
+    src: url(BarcodeFont.ttf);
+}
+  
+#codel{
+    font-family: myFirstFont1;
+    color: white;
+font-weight: 5;
+font-size: 100px;
+}

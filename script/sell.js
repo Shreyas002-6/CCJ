@@ -57,6 +57,11 @@ var token = function() {
 
 
 document.getElementById("sell").addEventListener("click", function() {
+if(dis.value =="")
+{
+alert("Please fill the coupon data!")
+}
+else{
   const db = getDatabase();
 //set(ref(db, "Coupon/"+uid+"/"),{
   var token1 = token();
@@ -71,7 +76,7 @@ document.getElementById("sell").addEventListener("click", function() {
                 date : date.value
             })
             .then(()=>{
-                alert("Coupon added successfully");
+                alert("Coupon added successfully!");
                 document.getElementById("sellout").reset();
 
                 localStorage.setItem("token", token1);
@@ -81,7 +86,7 @@ document.getElementById("sell").addEventListener("click", function() {
             .catch((error)=>{
                 alert(error);
             });
-
+}
 
 });
 
@@ -95,6 +100,7 @@ document.getElementById("sell").addEventListener("click", function() {
     // User is signed out
     // ...
   }
+
 });
       
 

@@ -34,7 +34,7 @@
             // Signed in 
             const user = userCredential.user;
             console.log(user);
-            alert(user.email+" Login successfully!!!");       
+            alert(user.email+" Login successfull!");       
             location = 'home.html'
             document.getElementById("log").reset();
             // ...

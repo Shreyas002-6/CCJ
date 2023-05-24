@@ -3,7 +3,7 @@
       width: 30%;
       margin-left: 35%;
       margin-top: 18px;
-      background-color: ;
+      background-color: 
 
       
     }
@@ -12,7 +12,7 @@
     }
 
     #sell{
-      margin-top: 25px;
+      margin-top: 20px;
 width: 90px;
 background-color: #9FE2BF;
 color: black;
@@ -25,10 +25,17 @@ border: solid white 1px;
     #ac{
     
 font-size: 30px;
+color: white;
 
 
     }
     label{
     color: white;
+    }
+    body{
+      background-image: url("../img/sellback.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
     }
 

@@ -56,22 +56,22 @@ main {
 	color: white;
 }
 .message__line {
-	animation: message-fade-in-out 4s linear;
+	animation: message-fade-in-out 3s linear;
 	opacity: 0;
 	position: absolute;
 	inset: 0;
 	text-align: center;
 }
-.message__line:nth-child(2) { animation-delay: 4s; }
-.message__line:nth-child(3) { animation-delay: 8s; 
+.message__line:nth-child(2) { animation-delay: 3s; }
+.message__line:nth-child(3) { animation-delay: 6s; 
 
 }
-.message__line:nth-child(4) { animation-delay: 12s; }
+.message__line:nth-child(4) { animation-delay: 9s; }
 
 
 .message__line:last-child {
 	animation-name: message-fade-in;
-	animation-delay: 16s;
+	animation-delay: 12s;
 	animation-fill-mode: forwards;
 	color: white;
 }

@@ -15,7 +15,7 @@
   <style>
   </style>
   <!-- Design by foolishdeveloper.com -->
-    <title>About</title>
+    <title>Home</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
@@ -79,7 +79,7 @@
 <div class="container mt-3">
 
   <table class="table " style = "width: 100%;">
- <thead id="the">
+ <thead id="the" style="color: #FFF5EE;">
     <th style="border-bottom: none;">Brand</th>
     
     <th style="border-bottom: none;">Discount(%)</th>

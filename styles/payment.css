@@ -41,11 +41,14 @@ margin-left: 35%;
 height: 200px;
 font-size: 22px;
 text-align: center;
-color: white;
+color: black;
 padding-top: 10px;
 
 }
 body{
-background-color: #CCCCFF;
+  background-image: url("../img/buyback.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
  

@@ -37,7 +37,7 @@ const analytics = getAnalytics(app);
             const user = userCredential.user;   
             console.log(user);
             ///user.displayName = "shreyas";
-            alert("Registration successfull!!");
+            alert("Registration successfull!");
             location = 'login.html'
             document.getElementById("reg").reset();
           })

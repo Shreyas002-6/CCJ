@@ -1,5 +1,8 @@
 body{
-background-color: #CCCCFF;
+  background-image: url("../img/profileback.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 
       }
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
@@ -10,7 +13,7 @@ background-color: #CCCCFF;
     border-radius: 10px;
    background-color: #F0FFFF;
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgb(253, 253, 253) 0px 3px 8px;
 }
 
 .line{

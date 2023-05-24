@@ -2,4 +2,4 @@ function Redirect()
   {  
      window.location="./register.html"; 
     }  
-    setTimeout('Redirect()', 19000); 
+    setTimeout('Redirect()', 14000); 

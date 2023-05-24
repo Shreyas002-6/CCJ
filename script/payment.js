@@ -26,6 +26,12 @@
       const user = auth.currentUser;
             
 document.getElementById("purc").addEventListener("click", function() {
+if(cid.value=="")
+{
+alert("Please paste the ID!");
+}
+else
+{
 const db = getDatabase();
 
 const dbref = ref(db);
@@ -46,6 +52,13 @@ dis.innerHTML = "Discount - "+snapshot.val().dis+"%";
 pri.innerHTML = "Price - "+snapshot.val().price+"Rs";
 bran.innerHTML = "Brand - "+snapshot.val().brand;
 seller.innerHTML = "Seller - "+snapshot.val().mail;
+
+var cprice = snapshot.val().price;
+//console.log(cprice);
+localStorage.setItem("cprice", cprice);
+//console.log(localStorage.getItem("cprice"));
+
+
 
 let a = document.createElement("a");
 let link = document.createTextNode("Buy");
@@ -73,5 +86,7 @@ alert("No Coupons found");
 {
 alert(error)
 })
+}
 });
+
 

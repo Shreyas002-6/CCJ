@@ -60,6 +60,11 @@
     document.getElementById("edit").addEventListener("click", function() {
     const db = getDatabase();
     let username = prompt("Enter your username")
+if(username==""){
+alert("Please enter valid username!")
+}
+else{
+
     set(ref(db, "User/"+ uid),{
                 username : username
             })
@@ -72,6 +77,7 @@
             .catch((error)=>{
                 alert(error);
             });
+}
             });
 
     // ...
